@@ -1,0 +1,80 @@
+.textarea-container {
+  position: relative;
+}
+
+.job-description-input {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 140px;
+  transition: all 0.3s ease;
+}
+
+.job-description-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.job-description-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.input-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 0.25rem;
+}
+
+.char-count {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Colorful glow on focus */
+.textarea-container:focus-within::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-500),
+    var(--secondary-500),
+    var(--accent-500),
+    var(--primary-500)
+  );
+  border-radius: calc(var(--radius-lg) + 5px);
+  z-index: -1;
+  opacity: 0.4;
+  filter: blur(8px);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-description-input {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}

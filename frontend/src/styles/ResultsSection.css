@@ -1,0 +1,358 @@
+/* .results-section {
+  padding: 0;
+  border-radius: var(--radius-xl);
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border: 1px solid var(--glass-border);
+  overflow: hidden;
+}
+
+.results-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.results-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-500),
+    var(--secondary-500),
+    var(--accent-500)
+  );
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.results-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--primary-gradient);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.results-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.results-header p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.analysis-content {
+  padding: 2rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.analysis-header-main {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.analysis-header-main::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: var(--primary-gradient);
+  border-radius: 999px;
+}
+
+.percentage-highlight {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--primary-500);
+  color: white;
+}
+
+.analysis-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem 0;
+  color: white;
+}
+
+.analysis-bullet {
+  margin: 0.5rem 0 0.5rem 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+  list-style-type: none;
+}
+
+.analysis-bullet::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-400);
+  font-size: 1.2rem;
+}
+
+.analysis-numbered {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.analysis-text {
+  margin: 0.75rem 0;
+}
+
+.results-footer {
+  padding: 1rem 2rem;
+  text-align: right;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.results-footer small {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .results-header {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .results-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+  
+  .results-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .analysis-content {
+    padding: 1.5rem;
+  }
+  
+  .analysis-header-main {
+    font-size: 1.2rem;
+  }
+  
+  .percentage-highlight {
+    font-size: 1rem;
+  }
+  
+  .analysis-header {
+    font-size: 1.1rem;
+  }
+} */
+
+.results-section {
+  padding: 0;
+  border-radius: var(--radius-xl);
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border: 1px solid var(--dark-border);
+  overflow: hidden;
+  background: var(--dark-surface);
+}
+
+.results-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.results-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-500),
+    var(--secondary-500),
+    var(--accent-500)
+  );
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.results-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--primary-gradient);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.results-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.results-header p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.95rem;
+  color: var(--dark-text-secondary);
+}
+
+.analysis-content {
+  padding: 2rem;
+  line-height: 1.7;
+  color: var(--dark-text);
+}
+
+.analysis-header-main {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  color: var(--dark-text);
+  position: relative;
+  display: inline-block;
+}
+
+.analysis-header-main::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: var(--primary-gradient);
+  border-radius: 999px;
+}
+
+.percentage-highlight {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--primary-500);
+  color: var(--dark-text);
+}
+
+.analysis-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem 0;
+  color: var(--dark-text);
+}
+
+.analysis-bullet {
+  margin: 0.5rem 0 0.5rem 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+  list-style-type: none;
+  color: var(--dark-text-secondary);
+}
+
+.analysis-bullet::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-400);
+  font-size: 1.2rem;
+}
+
+.analysis-numbered {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1rem;
+  color: var(--dark-text-secondary);
+}
+
+.analysis-text {
+  margin: 0.75rem 0;
+  color: var(--dark-text-secondary);
+}
+
+.results-footer {
+  padding: 1rem 2rem;
+  text-align: right;
+  border-top: 1px solid var(--dark-border);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.results-footer small {
+  color: var(--dark-text-secondary);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .results-header {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .results-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+
+  .results-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .analysis-content {
+    padding: 1.5rem;
+  }
+
+  .analysis-header-main {
+    font-size: 1.2rem;
+  }
+
+  .percentage-highlight {
+    font-size: 1rem;
+  }
+
+  .analysis-header {
+    font-size: 1.1rem;
+  }
+}
